@@ -54,3 +54,9 @@ for (const callBtn of callBtns) {
     }
   });
 }
+
+const clearBtn = getElement("clear-btn");
+clearBtn.addEventListener("click", function () {
+  const historyList = getElement("history-list");
+  historyList.innerHTML = "";
+});
