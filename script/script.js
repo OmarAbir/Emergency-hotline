@@ -49,7 +49,7 @@ for (const callBtn of callBtns) {
                     </div>`;
       historyList.appendChild(createDiv);
     } else {
-      alert("You don't have enough coins to make a call.");
+      alert("আপনার নিকট কল করার জন্য পর্যাপ্ত কয়েন নেই।");
     }
   });
 }
@@ -66,7 +66,7 @@ for (const copyBtn of copyBtns) {
     const cardNumb = copyBtn.parentNode.parentNode.childNodes[7].innerText;
 
     navigator.clipboard.writeText(cardNumb);
-    alert(`নাম্বারটি কপি হয়েছে: ${cardNumb}`);
+    alert(`${cardNumb} নাম্বারটি কপি হয়েছে`);
     const copyCount = getElement("copy-count");
     copyCount.innerText = Number(copyCount.innerText) + 1;
   });
