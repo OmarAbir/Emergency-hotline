@@ -62,9 +62,9 @@
         </section>
 
         <!-- card section  -->
-        <section class="container  flex justify-center lg:grid lg:grid-cols-12 py-9 px-4">
-            <div class="col-span-9">
-                <div class="grid lg:grid-cols-3 gap-5">
+        <section class="container grid grid-cols-1 justify-center  mx-auto gap-9 lg:grid lg:grid-cols-12 py-9 px-4">
+            <div class="lg:col-span-9">
+                <div class="grid justify-center lg:grid lg:grid-cols-3 gap-5">
 
 
                     <!-- card  -->
@@ -216,6 +216,20 @@
                 </div>
             </div>
 
+            <!-- history section  -->
+            <section class="bg-white lg:col-span-3 p-4 rounded-lg w-[300px] mx-auto lg:w-full shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-1">
+                        <img class="w-7" src="assets/history-icon.svg" alt="">
+                        <h4>Call history</h4>
+                    </div>
+                    <button class=" btn bg-[#00A63E] text-white rounded-full px-7 py-2 hover:bg-green-700"
+                        id="clear-btn">Clear</button>
+                </div>
+                <div id="history-list">
+
+                </div>
+            </section>
         </section>
     </main>
 
