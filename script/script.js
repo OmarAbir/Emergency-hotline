@@ -25,12 +25,11 @@ for (const callBtn of callBtns) {
     const cardTImg =
       callBtn.parentNode.parentNode.childNodes[1].childNodes[1].childNodes[1]
         .src;
-    console.log(cardTImg);
 
     const cointCount = getElement("coin-count");
     let currentCoins = Number(cointCount.innerText);
     if (currentCoins >= 20) {
-      alert(` Calling to ${cardDeatail} on ${cardNumb}`);
+      alert(`${cardNumb} নম্বরে ${cardDeatail} এ ফোন করা হচ্ছে...`);
       cointCount.innerText = currentCoins - 20;
       const historyList = getElement("history-list");
       const createDiv = document.createElement("div");
@@ -60,3 +59,15 @@ clearBtn.addEventListener("click", function () {
   const historyList = getElement("history-list");
   historyList.innerHTML = "";
 });
+
+const copyBtns = getByClassName("copy-btn");
+for (const copyBtn of copyBtns) {
+  copyBtn.addEventListener("click", function () {
+    const cardNumb = copyBtn.parentNode.parentNode.childNodes[7].innerText;
+
+    navigator.clipboard.writeText(cardNumb);
+    alert(`নাম্বারটি কপি হয়েছে: ${cardNumb}`);
+    const copyCount = getElement("copy-count");
+    copyCount.innerText = Number(copyCount.innerText) + 1;
+  });
+}
