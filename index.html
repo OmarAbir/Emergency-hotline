@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .font-hind {
+            font-family: 'Hind Madurai', sans-serif;
+        }
+    </style>
+
+    <title>Emergency Hotline</title>
+</head>
+
+<body>
+    <nav class="flex-row justify-center lg:flex lg:items-center lg:justify-between container  mx-auto py-5 ">
+        <div class="flex justify-center gap-2">
+            <img src="assets/logo.png" class="w-12 h-12" alt="">
+            <img src="assets/Emergency Service.svg" alt="">
+        </div>
+        <div class="flex justify-center py-4 lg:py-0 gap-4">
+            <div class="bg-[#ECFFF0] rounded-full px-5 flex items-center gap-1   ">
+                <img src="assets/heart.png" class="w-6" alt="">
+                <p id="nav-heart">0</p>
+            </div>
+            <div class="bg-[#ECFFF0] rounded-full px-5 flex items-center gap-1 ">
+                <img src="assets/coin.png" class="w-6 " alt="">
+                <p id="coin-count">100</p>
+            </div>
+            <div id="copy-count" class="btn  bg-[#00A63E] text-white rounded-full px-9">
+                Copy
+            </div>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>
